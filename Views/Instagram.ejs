@@ -1,0 +1,14 @@
+<%- include ("includes/head.ejs") %>
+<body>
+    <h1>This page to belong to <%= username %> </h1>
+    <button>Follow</button>
+    <button>Message</button>
+
+    <h3>Account that follow you :</h3>
+    <ul>
+         <% for(let name of follower){ %>
+            <li> <%=name %></li>
+            <%  } %>
+    </ul>
+</body>
+<%- include("includes/footer.ejs") %>
